@@ -8,9 +8,13 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: 3em;
     padding: .5em;
@@ -21,6 +25,18 @@ nav a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
+}
+
+.site-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
 }
 
 html {
@@ -45,4 +61,36 @@ h1 {
 
 .subheading {
     display: block;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+footer {
+    position: sticky;
+    top: 100vh;
+    text-align: center;
+    width: 100%;
+    margin-bottom: .25em;
+}
+
+.content {
+    text-align: center;
+    margin: auto;
+    max-width: 70ch;
+}
+
+button {
+    background-color: black;
+    border: 3px solid black;
+    color: white;
+    padding: 1em;
+    font-weight: bold;
+    margin: 1em;
+    transition: .1s;
+    cursor: pointer;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
 }
